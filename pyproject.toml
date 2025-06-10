@@ -1,0 +1,28 @@
+[project]
+name = "wiktionary-scraper"
+version = "0.1.0"
+description = "Scraping Wiktionary to help me construct Anki language learning flashcards"
+authors = [
+    {name = "Eric R. Fulmer",email = "2952996+EFulmer@users.noreply.github.com"}
+]
+license = {text = "AGPL 3.0"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pandas (>=2.3.0,<3.0.0)",
+    "lxml (>=5.4.0,<6.0.0)",
+    "html5lib (>=1.1,<2.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+ipdb = "^0.13.13"
+black = "^25.1.0"
+flake8 = "^7.2.0"
+pytest = "^8.4.0"
+jupyterlab = "^4.4.3"
+
